@@ -1,6 +1,6 @@
 %define version 0.84	
 %define name wmtop
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary:	WindowMaker dock applet for top
 Name:		%{name}
@@ -12,8 +12,10 @@ Source:		%{name}-%{version}.tar.bz2
 Patch0:		mkfile.patch.bz2
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 URL:		http://wmtop.sourceforge.net/
-Buildrequires:	xpm-devel
-Buildrequires:	XFree86-devel
+Buildrequires:	libxpm-devel
+Buildrequires:	libxext-devel
+Buildrequires:	libxau-devel
+Buildrequires:	libxdmcp-devel
 
 %description
 Wmtop is a WindowMaker dockapp that is a mini graphical version of the 
@@ -21,7 +23,7 @@ cpu monitoring utility top. Themes are included.
 
 %prep
 
-%setup
+%setup -q
 %patch0
 
 %build
