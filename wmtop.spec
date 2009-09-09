@@ -1,6 +1,6 @@
 %define version 0.84	
 %define name wmtop
-%define release %mkrel 10
+%define release %mkrel 11
 
 Summary:	WindowMaker dock applet for top
 Name:		%{name}
