@@ -49,3 +49,48 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/wmtop
 %{_mandir}/man1/*
 %doc BUGS CHANGES README TODO
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.84-11mdv2010.0
++ Revision: 434935
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.84-10mdv2009.0
++ Revision: 262094
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.84-9mdv2009.0
++ Revision: 256268
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Fri Nov 30 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.84-7mdv2008.1
++ Revision: 114203
+- finer Buildrequires
+
+
+
+* Thu Jan 26 2006 Lenny Cartier <lenny@mandriva.com> 0.84-6mdk
+- x86_64 fix
+
+* Thu Jun 02 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.84-5mdk
+- Rebuild
+
+* Sun Dec 07 2003 Franck Villaume <fvill@freesurf.fr> 0.84-4mdk
+- add BuildRequires : XFree86-devel
+- add support to RPM_OPT_FLAGS
+- support 64 bits : libxpm-devel -> xpm-devel
+
+* Mon Aug 25 2003 Michael Scherer <scherer.michael@free.fr> 0.84-3mdk
+- BuildRequires (  libxpm-devel )
+- rm $RPM_BUILD_ROOT in %%install
+
+* Thu Jan 30 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.84-2mdk
+- rebuild
+
+* Tue May 21 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.84-1mdk
+- added by Matthias Debus <psic4t@netbands.de>
