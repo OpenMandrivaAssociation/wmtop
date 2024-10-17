@@ -11,7 +11,7 @@ Group:		Monitoring
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		mkfile.patch.bz2
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-URL:		http://wmtop.sourceforge.net/
+URL:		https://wmtop.sourceforge.net/
 Buildrequires:	libxpm-devel
 Buildrequires:	libxext-devel
 Buildrequires:	libxau-devel
