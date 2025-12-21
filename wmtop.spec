@@ -12,6 +12,7 @@ Source:		%{name}-%{version}.tar.bz2
 Patch0:		mkfile.patch.bz2
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 URL:		https://wmtop.sourceforge.net/
+BuildRequires:	make
 Buildrequires:	libxpm-devel
 Buildrequires:	libxext-devel
 Buildrequires:	libxau-devel
